@@ -1,0 +1,55 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>News List</h2>
+      </div>
+       <div class="row">
+            <div class="col-md-12 order-md-1">   
+                <% if(message && message!=undefined) { 
+                    message = JSON.parse(message); className=Object.keys(message); %>
+                  <div class="alert alert-<%= className %>">
+                      <%= message[className] %>
+                  </div>
+                <% } %> 
+                <table id="example" class="table" style="width:100%">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Url</th>
+                    <th scope="col">Image Url</th>
+                    <th scope="col">publishedAt</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%if(data.length==0){%>
+                    <tr>
+                        <td colspan="8">No records found</td>
+                    </tr>
+                <%}else{%>
+                <%for(i=0;i<data.length;i++){%>
+                <tr class="">
+                    <th scope="row"><%-i+1%></th>
+                    <td><%-data[i].title;%></td>
+                    <td><%-data[i].category;%></td>
+                    <td><%-data[i].description.substr(0, 50)%><a href="/admin/viewNews/<%-data[i]._id;%>"></br>..Read more</a></td>
+                    <td><%-data[i].url%></td>
+                    <td><img src="<%-data[i].imageUrl;%>" alt="image" width="50" height="50"></td>
+                    <td><%-data[i].publishedAt%></td>
+                    <td><a href="/admin/updateNews/<%-data[i]._id;%>">
+                            <span class="badge badge-secondary">Update</span></a>
+                        <a href="/admin/deleteNews/<%-data[i]._id;%>">
+                            <span class="badge badge-danger">Delete</span></a></td>
+                </tr>
+            <%}}%> 
+                </tbody>
+            </table>
+        </div>
+  </div>
+</div>
+
+<footer><%-include('footer');%></footer>
+

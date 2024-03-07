@@ -1,0 +1,78 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5">
+      <%if(page=='updateNews'){%>
+        <h2>Update News</h2>
+      <%}else{%>
+        <h2>Add News</h2>
+      <%}%>
+      </div>
+  <div class="row">
+    <% if(message && message!=undefined) { 
+      message = JSON.parse(message); className=Object.keys(message); %>
+      <div class="alert alert-<%= className %>">
+          <%= message[className] %>
+      </div>
+  <% } %> 
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" method="POST" action="<%- (page=='addNews')? '/admin/addNews' : '/admin/updateNews'; %>" novalidate>
+        <%if(page=='updateNews'){%>  
+        <input type="hidden" name="_id" value="<%- (data._id!='') ? data._id : '' %>">
+        <%}%>
+          <div class="col-md-12 order-md-1">
+                <div class="col-md-6 mb-3">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="form-control" id="title" placeholder="" value="<%- (data.title!='') ? data.title : '' %>" required>
+                    <div class="invalid-feedback">
+                    Valid Title is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="category">Category</label>
+                  <select class="form-control" id="category" name="category" required>
+                    <option value="">--select--</option>
+                    <option value="sports" <%- (data.category=='sports') ? 'selected' : '' %>>Sports</option>
+                    <option value="weather" <%- (data.category=='weather') ? 'selected' : '' %>>Weather</option>
+                    <option value="politics" <%- (data.category=='politics') ? 'selected' : '' %>>Politics</option>
+                    <option value="world" <%- (data.category=='world') ? 'selected' : '' %>>World News</option>
+                    <option value="wildlife" <%- (data.category=='wildlife') ? 'selected' : '' %>>Wild Life</option>
+                    <option value="earth" <%- (data.category=='earth') ? 'selected' : '' %>>Earth</option>
+                    <option value="other" <%- (data.category=='other') ? 'selected' : '' %>>Others</option>
+
+                  </select>
+                  <div class="invalid-feedback">
+                  Valid Category is required.
+                  </div>
+               </div>
+                <div class="col-md-6 mb-3">
+                  <label for="description">Description</label>
+                  <textarea name="description" class="form-control" id="description" required><%- (data.description!='') ? data.description : '' %></textarea>
+                  <div class="invalid-feedback">
+                  Valid Description is required.
+                  </div>
+               </div>
+                <div class="col-md-6 mb-3">
+                    <label for="url">Url</label>
+                    <input type="text" name="url" class="form-control" id="url" placeholder="" value="<%- (data.url!='') ? data.url : '' %>" required>
+                    <div class="invalid-feedback">
+                    Valid Url id is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="imageUrl">Image Url</label>
+                    <input type="text" name="imageUrl" class="form-control" id="imageUrl" placeholder="" value="<%- (data.imageUrl!='') ? data.imageUrl : '' %>" required>
+                    <div class="invalid-feedback">
+                    Valid Image Url is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer><%-include('footer');%></footer>
+
+  

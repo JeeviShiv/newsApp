@@ -1,0 +1,36 @@
+<header><%-include('header')%></header>
+<div class="container marginTop">
+  <div class="">
+      <h2>Chat Room</h2>
+  </div>
+ 
+  <div class="row"> 
+    <div class="col-md-12 order-md-1">
+        <link href="/css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+        <script defer src="/scripts/socket.js"></script>
+        <main class="chatRoom">
+        <form class="form-join">
+            <input type="text" id="name" maxlength="8" placeholder="Your name" size="5" required>
+            <input type="text" id="room" placeholder="Chat room" size="5" required>
+            <button id="join" class="btn btn-secondary" type="submit">join</button>
+        </form>
+        <ul class="chat-display"></ul>
+        <p class="user-list"></p>
+        <p class="room-list"></p>
+        <p class="activity"></p>
+        <form class="form-msg">
+            <input type-="text" id="message"  placeholder="Your message" required>
+            <button  class="btn btn-secondary" type="submit">send</button>
+        </form>
+    </main>
+</div>
+</div>
+
+<hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+<footer><%-include('footer')%></footer>
+

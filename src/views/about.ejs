@@ -1,0 +1,35 @@
+<header><%-include('header')%></header>
+<div class="container marginTop">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">About us</h2>
+        <p><span class="text-muted">Our channel delivers 24/7</span></p>
+        <p class="lead">Every business has an origin story worth telling, and usually, one that justifies why you even do business and have clients.<p>
+        <p>Some centennial enterprises have pages of content that can fit in this section, while startups can tell the story of how the company was born, its challenges, and its vision for the future.</p>
+      </div>
+      <div class="col-md-5">
+        <div id="map"></div>
+        <script src="https://www.google.com/jsapi?.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3sfDt0WwSjYYAT4UK7wFrUC2ftldXwoc&callback=initMap&loading=async"></script>
+          <script>
+            function initMap() {
+                const myLatLng = { lat: 45.508830303282, lng: -73.561581542994 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 4,
+                  center: myLatLng,
+                });
+
+                new google.maps.Marker({
+                  position: myLatLng,
+                  map,
+                  title: "Hello World!",
+                });
+              }
+              window.initMap = initMap;
+          </script>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+  <footer><%-include('footer')%></footer>
+

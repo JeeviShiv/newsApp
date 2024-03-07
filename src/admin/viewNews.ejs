@@ -1,0 +1,18 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5 headClass">
+      <h2><%-data.title%></h2>
+    </div>
+    <div class="row">        
+        <div class="col-md-8 pl-5">
+          <blockquote class="blockquote">
+            <p class="mb-0"><%-data.url%></p>
+            <footer class="blockquote-footer"><cite title="Source Title"><%-data.publishedAt%></cite></footer>
+          </blockquote>
+          <p><img src="<%-data.imageUrl%>" class="img-fluid" alt="Responsive image">
+          </p>
+          <p><%-data.description%></p>
+        </div>
+    </div>
+</div>
+<footer><%-include('footer');%></footer>

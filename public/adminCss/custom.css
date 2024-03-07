@@ -1,0 +1,29 @@
+.dataTables_paginate a {
+    padding: 8px !important;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+.container {
+    max-width: 960px;
+}
+.lh-condensed { line-height: 1.25; }
+.py-5{
+    margin-left: 30px;
+}
+textarea.form-control {
+    height: 161px;
+}
+
+
+span.badge.badge-secondary{
+    margin: 2px;
+}
+span.badge.badge-danger{
+    margin: 2px;
+}
+.py-5.headClass{
+    margin-left: 30px;
+    padding-bottom: 5px !important;
+    margin-bottom: 5px !important;
+}

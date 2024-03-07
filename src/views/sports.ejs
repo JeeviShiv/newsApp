@@ -1,0 +1,24 @@
+<header><%-include('header')%></header>
+<div class="container marginTop">
+  <%for(i=0;i<sportsNews.length;i++){ 
+    addClass1=''; addClass2='';
+    if(i%2==0){ addClass1 = 'order-md-2';
+                addClass2 = 'order-md-1'; }%>
+    <div class="row featurette">
+      <div class="col-md-7 <%=addClass1%>">
+        <h2 class="featurette-heading"><p><%=sportsNews[i].title%></p></h2>
+        <p><span class="text-muted"><%=sportsNews[i].url%></span></p>        
+        <p class="lead"><%=sportsNews[i].description%></p>
+      </div>
+      <div class="col-md-5 <%=addClass2%>">
+        <img class="featurette-image img-fluid mx-auto" src="<%=sportsNews[i].imageUrl%>" alt="Generic placeholder image">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <%}%>
+
+  </div><!-- /.container -->
+
+  <header><%-include('footer')%></header>
+

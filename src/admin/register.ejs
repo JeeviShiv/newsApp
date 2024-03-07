@@ -1,0 +1,64 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5">
+      <% if(role=='admin'){%>
+        <h2>Add User</h2>
+      <% } else { %>
+        <h2>Register</h2>
+      <% } %>
+      </div>
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+      <% if(message && message!=undefined) { 
+        message = JSON.parse(message); className=Object.keys(message); %>
+        <div class="alert alert-<%= className %>">
+            <%= message[className] %>
+        </div>
+    <% } %> 
+      <form class="needs-validation" method="POST" action="/admin/addUser" novalidate>
+          <div class="col-md-12 order-md-1">
+                <div class="col-md-6 mb-3">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid Username is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="emailId">Email ID</label>
+                    <input type="email" name="emailId" class="form-control" id="emailId" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid email id is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid password is required.
+                    </div>
+                </div>
+                <% if(role=='admin'){%>
+                  <div class="col-md-6 mb-3">
+                    <label for="role">User role</label>
+                    <select name="role" class="form-control" id="role" required>
+                      <option value="">--Select--</option>
+                      <option value="admin">Admin</option>
+                      <option value="customer">Customer</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please enter role of the user.
+                    </div>
+                    </div>
+                <%}%>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer><%-include('footer');%></footer>
+
+  

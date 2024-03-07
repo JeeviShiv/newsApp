@@ -1,0 +1,38 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Users List</h2>
+      </div>
+        <div class="row">
+            <div class="col-md-12 order-md-1">   
+                <table id="example" class="table" style="width:100%">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%if(data.length==0){%>
+                    <tr>
+                        <td colspan="5">No records found</td>
+                    </tr>
+                <%}else{%>
+                <%for(i=0;i<data.length;i++){%>
+                <tr class="">
+                    <th scope="row"><%-i+1%></th>
+                    <td><%-data[i].role;%></td>
+                    <td><%-data[i].username;%></td>
+                    <td><%-data[i].emailId%></td>
+                </tr>
+            <%}}%> 
+                </tbody>
+            </table>
+        </div>
+  </div>
+</div>
+
+<footer><%-include('footer');%></footer>
+

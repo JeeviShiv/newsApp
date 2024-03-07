@@ -1,0 +1,51 @@
+<header><%-include('header')%></header>
+<div class="container marginTop">
+  <div class="py-5">
+      <h2>Contact us</h2>
+  </div>
+  <% if(message && message!=undefined) { 
+      message = JSON.parse(message); className=Object.keys(message); %>
+    <div class="alert alert-<%= className %>">
+        <%= message[className] %>
+    </div>
+  <% } %> 
+  <div class="row"> 
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" method="POST" action="/news/contact" novalidate>
+          <div class="col-md-12 order-md-1">
+                <div class="col-md-6 mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid Name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="emailId">Email ID</label>
+                    <input type="email" name="emailId" class="form-control" id="emailId" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid email id is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" class="form-control" id="message" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid message is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+  <footer><%-include('footer')%></footer>
+

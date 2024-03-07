@@ -1,0 +1,22 @@
+<header><%-include('header')%></header>
+<div class="container marginTop">
+
+  <!-- START THE FEATURETTES -->
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"><p><%=news.title%></p></h2>
+      <p><span class="text-muted"><%=news.url%></span></p>
+      <p class="lead"><%=news.description%></p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" src="<%=news.imageUrl%>" alt="Generic placeholder image">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+     <!-- /END THE FEATURETTES -->
+  </div><!-- /.container -->
+
+  <header><%-include('footer')%></header>
+

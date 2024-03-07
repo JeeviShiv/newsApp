@@ -1,0 +1,41 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5">
+        <h2>Login Here !!!</h2>
+      </div>
+
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" method="POST" action="/admin/loginUser" novalidate>
+          <div class="col-md-12 order-md-1">
+            <% if(message && message!=undefined) { 
+                  message = JSON.parse(message); className=Object.keys(message); %>
+                  <div class="alert alert-<%= className %>">
+                      <%= message[className] %>
+                  </div>
+            <% } %> 
+                <div class="col-md-6 mb-3">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="description">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid password is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer><%-include('footer');%></footer>
+
+  
