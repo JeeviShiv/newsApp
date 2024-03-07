@@ -25,6 +25,18 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
+        <%if(SliderNews.length==0){%> 
+          <div class="carousel-item active">
+            <img class="first-slide" src="https://images.unsplash.com/photo-1645075960701-573cbc669de6?q=80&w=3104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Add Some banner info from admin side</h1>
+                <p>Go and add some news under banner category</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        <%} else {%>
         <%for(i=0;i<SliderNews.length;i++){%>
         <div class="carousel-item <%-(i==0)?'active' :'' %>">
           <img class="first-slide" src="<%-SliderNews[i].imageUrl%>" alt="First slide">
@@ -36,7 +48,7 @@
             </div>
           </div>
         </div>
-        <%}%>
+        <%} }%>
       </div>
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -51,34 +63,39 @@
     <div class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <%for(var i =0;i<latestNews.length;i++){%>
+        <%
+        if(latestNews.length==0){%>
+          <p>No latest News found</p>
+        <%}%>
+        <% for(var i =0;i<latestNews.length;i++){%>
         <div class="col-lg-4">
           <img class="rounded-circle" src="<%=latestNews[i].imageUrl%>" alt="Generic placeholder image" width="140" height="140">
           <h2><%=latestNews[i].title.substr(0, 30)%></h2>
           <p><%=latestNews[i].description.substr(0, 250)%></p>
           <p><a class="btn btn-secondary" href=/news/feeds/<%=latestNews[i]._id%> role="button">View More &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <%}%>
+        <% } %>
       </div><!-- /.row -->
 
       <hr class="featurette-divider">
-      <%for(i=0;i<othersNews.length;i++){ 
-        addClass1=''; addClass2='';
-        if(i%2==0){ addClass1 = 'order-md-2';
-                    addClass2 = 'order-md-1'; }%>
-        <div class="row featurette">
-          <div class="col-md-7 <%=addClass1%>">
-            <h2 class="featurette-heading"><p><%=othersNews[i].title%></p></h2>
-            <p><span class="text-muted"><%=othersNews[i].url%></span></p>        
-            <p class="lead"><%=othersNews[i].description%></p>
-          </div>
-          <div class="col-md-5 <%=addClass2%>">
-            <img class="featurette-image img-fluid mx-auto" src="<%=othersNews[i].imageUrl%>" alt="Generic placeholder image">
-          </div>
-        </div>
-        <hr class="featurette-divider">
-    
-        <%}%>
+      <%
+          for(i=0;i<othersNews.length;i++){ 
+              addClass1=''; addClass2='';
+              if(i%2==0){ addClass1 = 'order-md-2';
+                          addClass2 = 'order-md-1'; }%>
+              <div class="row featurette">
+                <div class="col-md-7 <%=addClass1%>">
+                  <h2 class="featurette-heading"><p><%=othersNews[i].title%></p></h2>
+                  <p><span class="text-muted"><%=othersNews[i].url%></span></p>        
+                  <p class="lead"><%=othersNews[i].description%></p>
+                </div>
+                <div class="col-md-5 <%=addClass2%>">
+                  <img class="featurette-image img-fluid mx-auto" src="<%=othersNews[i].imageUrl%>" alt="Generic placeholder image">
+                </div>
+              </div>
+              <hr class="featurette-divider">
+      
+      <% } %>
 
     </div><!-- /.container -->
 

@@ -8,6 +8,8 @@ const port = 4750;
 app.use(express.urlencoded({ extended:true}));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/helper'));
+app.use(express.static(__dirname + '/images'));
+
 
 app.use('/news', express.static(__dirname +'/src/views'));
 app.use('/admin', express.static(__dirname +'/src/admin'));

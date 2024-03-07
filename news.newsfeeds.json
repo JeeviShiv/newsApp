@@ -1,0 +1,225 @@
+[{
+  "_id": {
+    "$oid": "65ddffb4303b3c227e8e7c75"
+  },
+  "title": "Oh yeah, it's that good",
+  "description": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "sports",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-28T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65ddffcb504023a4edaa06fa"
+  },
+  "title": "And lastly, this one",
+  "description": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?q=80&w=2204&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "sports",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65ddfff8f93c8a1cb18c8158"
+  },
+  "title": "WildLife",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1527161153332-99adcc6f2966?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "wildlife",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65de000ae43fd61da134110e"
+  },
+  "title": "Global Warming 1",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1533921482637-8e125577dde6?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "other",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65de0014a251aca139cfa48a"
+  },
+  "title": "SportS",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://plus.unsplash.com/premium_photo-1676634832558-6654a134e920?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnRzfGVufDB8fDB8fHww",
+  "category": "sports",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e0e7315f6292594b315220"
+  },
+  "title": "Canada Snow Storm 1",
+  "description": "Over all snow fall is high in this year. Due to snow storm they announced a holiday for 3days to all schools and colleges 1",
+  "url": "sample.com1",
+  "imageUrl": "https://plus.unsplash.com/premium_photo-1661411193681-f798dc3085a3?q=80&w=3300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "weather",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e0e7c803f0e5cd92804b0b"
+  },
+  "title": "Hello",
+  "description": "All going good",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1591901206004-1b3cc4ffbe3c?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "politics",
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e1fb329560dff3495bef91"
+  },
+  "title": "Lion ",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1527073620320-77635188c627?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "wildlife",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T20:23:36.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e1fe82b756fd983c797a58"
+  },
+  "title": "health is wealth",
+  "description": "Healthy life style",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "other",
+  "publishedAt": {
+    "$date": "2024-03-01T16:12:50.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e1feb82a0e744dfc220836"
+  },
+  "title": "health",
+  "description": "Healthy Life style will give you a big treasure",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "other",
+  "publishedAt": {
+    "$date": "2024-03-01T16:13:44.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e2046d9560dff3495bef92"
+  },
+  "title": "Life in Earth",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1645075960701-573cbc669de6?q=80&w=3104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "banner",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-03-01T16:13:44.119Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e204dd9560dff3495bef93"
+  },
+  "title": "Nature and earth",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1477322524744-0eece9e79640?q=80&w=2329&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "banner",
+  "__v": 0,
+  " publishedAt": "",
+  "publishedAt": {
+    "$date": "2024-03-01T16:13:44.119Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e205659560dff3495bef94"
+  },
+  "title": "The space",
+  "description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "banner",
+  "__v": 0,
+  "publishedAt": {
+    "$date": "2024-02-29T16:13:44.119Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e219bea35e2d7cab2f8274"
+  },
+  "title": "CBC News: Weather Centre",
+  "description": "Nationwide, you can view weather on CBC News Network, 7 days a week.\r\nDon't forget, your local weather forecast is available in your area on the CBC regional nightly news.\r\nTune in for weather: regional, national and international, coming your way from our team of meteorologists!",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1477601263568-180e2c6d046e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "weather",
+  "publishedAt": {
+    "$date": "2024-03-01T18:09:02.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e21ac2f68db9ccd7ac5ea8"
+  },
+  "title": "‘No urgency’ for Bank of Canada to cut rates as economy skirts recession",
+  "description": "The national economy managed to skirt a technical recession in 2023, a Statistics Canada report Thursday showed.\r\n\r\n\r\nAnd while the Bank of Canada may well have achieved its coveted “soft landing” – tamping down inflation without triggering a recession – experts say signs of life in the Canadian economy could keep interest rates elevated until mid-year.\r\n\r\nAnnualized growth for real gross domestic product (GDP) in the fourth quarter remained positive at 1.0 per cent, the agency said Thursday. A rise in exports helped boost the economy while housing and business investment fell.\r\n\r\nAfter the economy contracted in Q3, a positive result for Q4 means that Canada has avoided falling into a technical recession, typically defined as two consecutive quarters of negative growth.",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "politics",
+  "publishedAt": {
+    "$date": "2024-03-01T18:13:22.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e840231b7903cba9c02269"
+  },
+  "title": "Latest news",
+  "description": "keep your mind healthy and free",
+  "url": "sample.com",
+  "imageUrl": "https://images.unsplash.com/photo-1629495025620-26d5f4ada7c2?q=80&w=3496&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "category": "other",
+  "publishedAt": {
+    "$date": "2024-03-06T10:06:27.074Z"
+  },
+  "__v": 0
+}]
